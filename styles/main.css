@@ -16,4 +16,9 @@ body .page-content .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+html .page-content .main .line-of-text,
+body .page-content .main .line-of-text {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=main.css.map */

@@ -9,13 +9,17 @@ Following the provided high fidelity mockup, use HTML, css, and vanilla JS to cr
  - current hexadecimal value should be rendered to the page
  - at least 1 transistion / pseudo state effect
 */
+
 let hexFinal = "";
 const backgroundQuerySelector = document.querySelector(".page-content");
+
 const hexCodeTextElement = document.getElementById("hexCodeText");
+
+const headerReplacement = document.createElement(`h4`);
 
 function randomHexGenerator() {
   const hexCharacters = "ABCDEF1234567890";
-  hexFinal = "";
+  hexFinal = "#";
 
   for (let i = 0; i < 6; i++) {
     hexFinal += hexCharacters[Math.floor(Math.random() * hexCharacters.length)];
@@ -26,6 +30,11 @@ function randomHexGenerator() {
 function hexButtonClicked() {
   randomHexGenerator();
 
-  backgroundQuerySelector.style.backgroundColor = `#${hexFinal}`;
-  hexCodeTextElement.replaceWith(document.createTextNode(`#${hexFinal}`));
+  backgroundQuerySelector.style.backgroundColor = hexFinal;
+
+  hexCodeTextElement.removeChild(hexCodeTextElement.firstChild);
+
+  hexCodeTextElement.appendChild(document.createTextNode(hexFinal));
+
+  console.log(headerReplacement);
 }
