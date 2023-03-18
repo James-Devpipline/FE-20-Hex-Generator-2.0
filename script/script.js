@@ -35,6 +35,4 @@ function hexButtonClicked() {
   hexCodeTextElement.removeChild(hexCodeTextElement.firstChild);
 
   hexCodeTextElement.appendChild(document.createTextNode(hexFinal));
-
-  console.log(headerReplacement);
 }

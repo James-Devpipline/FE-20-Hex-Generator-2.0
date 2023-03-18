@@ -10,15 +10,76 @@ body .page-content {
   grid-template-rows: 0.5fr 1fr;
   height: 100%;
 }
+html .page-content .header,
+body .page-content .header {
+  background-color: white;
+  height: 20%;
+}
+html .page-content .header div,
+body .page-content .header div {
+  margin: 0;
+}
+html .page-content .header div h3,
+body .page-content .header div h3 {
+  margin: 0;
+  color: #49a5e9;
+  padding: 5px 0 0 200px;
+}
 html .page-content .main,
 body .page-content .main {
   height: 100%;
+  width: 100%;
+}
+html .page-content .main .main-content,
+body .page-content .main .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 15%;
 }
-html .page-content .main .line-of-text,
-body .page-content .main .line-of-text {
+html .page-content .main .main-content .line-of-text,
+body .page-content .main .main-content .line-of-text {
+  width: 15%;
+  margin: 10px;
+  padding: 10px 5px;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: black;
+}
+html .page-content .main .main-content .line-of-text .background-color-text h4,
+body .page-content .main .main-content .line-of-text .background-color-text h4 {
+  margin: 0;
+  color: white;
+}
+html .page-content .main .main-content .line-of-text .hex-code h4,
+body .page-content .main .main-content .line-of-text .hex-code h4 {
+  margin: 0;
+  color: #3d8ac2;
+}
+html .page-content .main .main-content .hex-code-button,
+body .page-content .main .main-content .hex-code-button {
+  width: 100%;
+  height: 100%;
+}
+html .page-content .main .main-content .hex-code-button .hex-button,
+body .page-content .main .main-content .hex-code-button .hex-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+html .page-content .main .main-content .hex-code-button .hex-button button,
+body .page-content .main .main-content .hex-code-button .hex-button button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  color: black;
+  border-color: black;
+  border-radius: 10px;
+  background-color: transparent;
+}
+html .page-content .main .main-content .hex-code-button .hex-button button:hover,
+body .page-content .main .main-content .hex-code-button .hex-button button:hover {
+  background-color: white;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
