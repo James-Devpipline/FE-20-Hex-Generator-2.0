@@ -19,7 +19,7 @@ const headerReplacement = document.createElement(`h4`);
 
 function randomHexGenerator() {
   const hexCharacters = "ABCDEF1234567890";
-  let hexFinal = "#";
+  hexFinal = "#";
 
   for (let i = 0; i < 6; i++) {
     hexFinal += hexCharacters[Math.floor(Math.random() * hexCharacters.length)];
